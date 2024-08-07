@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1704789500 source:c:\users\pisoi rares\onedrive\documente\scoala\info liceu\pbinfo.github\clasa9\meditatie info\lectii\9.01.2024\maxd\maxd\main.cpp
+	<iostream>
+	<fstream>
+	<climits>
+

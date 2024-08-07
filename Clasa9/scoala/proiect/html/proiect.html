@@ -1,0 +1,81 @@
+<htmL>
+
+<head>
+    <title> Tablouri unidimensionale:C++ </title>
+</head>
+
+<body>
+
+    <h1>Definitie:</h1>
+    <p> Tablourile unidimensionale sunt un sir de elemente de acelaşi tip, în care contează ordinea elementelor.</p>
+    <h1>Declarare:</h1>
+    <img src="declarare vector.png" alt="int v[10];">
+    <h1> Indici </h1>
+    <p> Spunem că fiecare element are un indice. Indicii unui tablou sunt între 0 și Dimensiune-1.</p>
+    <h2> Exemplu: </h2>
+    <img src="exemplu vector indice.png" alt="numerele 1 3 7 5 au indicii 0,1,2,3">
+    <p> Care sunt valorile inițiale ale elementelor tabloului? Regula este aceeași ca pentru alte variabile:</p>
+    <ul>
+        <li>elementele unui tablou declarat global (în afara oricărei funcții) sunt inițializate cu 0;</li>
+        <li>elementele unui tablou declarat local (în interiorul unei funcții) sunt inițializate cu valori aleatorii.
+            Faptul că anumite implementări la compilatorului C++ inițializează și variabilele local cu 0 nu este o
+            regulă, ea nu este garantată de standardul C++.</li>
+    </ul>
+    <h1> Referirea unui element </h1>
+    <p>Referirea unui element se face prin operatorul de indexare, [], care are prioritate maximă.</p>
+    <h2> Exemplu </h2>
+    <img src="exemplu_referire_element.png" alt="int v[0],v[6],v[m];">
+    <p>Aici v este identificatorul tabloului (denumirea), iar 0, 6 sau m sunt indicii. Este necesar ca programatorul
+        (adică TU!) să se asigure că valoarea indicelui se găsește în intervalul potrivit pentru tabloul dat (în
+        exemplul nostru între 0 și 9).</p>
+    <h1> Dimensiunea unui tablou unidimensional </h1>
+    <p>La declararea unui tablou unidimensional se precizează o dimensiune pentru acesta. Aceasta reprezintă o
+        dimensiune fizică a tabloului – numărul maxim de elemente pe care le-ar putea avea acesta, conform restricțiilor
+        problemei.</p>
+    <h1> Parcurgerea tabloului unidimensional </h1>
+    <p>Parcurgerea unui tablou reprezintă referirea fiecărui element al tabloului, într-o anumită ordine. Referirea
+        elementului se face prin intermediul indicelui, cu ajutorul operatorului de indexare.</p>
+    <h2>Exemplu:</h2>
+    <img src="exemplu parcurgere vector.png" alt="se parcurg elementele din vector de la 0 pana la n-1.">
+    <p>De regulă, parcurgerea tabloului se face în ordinea crescătoare a indicelor, de la 0 la n-1. Făcând o analogie cu
+        axa numerelor, putem spune că parcurgerea se face de la stânga spre dreapta. Tabloul poate fi parcurs și de la
+        dreapta la stânga, adică în ordinea descrescătoare a indicilor, de la n-1 la 0:</p>
+    <h2>Exemplu:</h2>
+    <img src="alt exemplu parcurgere vector.png" alt="se parcurg elementele vectorului de la n-1 pana la 0.">
+    <h1>Citirea unui vector</h1>
+    <p>De fapt, în cele mai multe cazuri nu se poate face citirea unui tablou unidimensional (vector), adică
+        "cin>>x".Instrucțiunea de mai sus duce de regulă la eroare de sintaxă. În schimb, se pot citi elementele
+        tabloului, în ordine, cu ajutorul parcurgerii:
+
+    </p>
+    <h2>Exemplu:</h2>
+    <img src="exemplu_citire_vector.png" alt="se citesc elementele vectorului de la 0 la n-1">
+    <h1>Afisarea unui vector</h1>
+    <p>La fel ca în cazul citirii, în cele mai multe cazuri nu se poate face nici afișarea unui vector.Spre deosebire de
+        citire, afișarea unui tablou cu ajutorul operatorului de inserție << nu duce la eroare de sintaxă, însă nu se
+            vor afișa elementele tabloului, ci o adresă (de exemplu 0x7ffc9711bcd0), reprezentând adresa primului
+            element al tabloului. Elementele tabloului se pot afișa prin parcurgere, în ordinea dorită.</p>
+            <h2>Exemplu:</h2>
+            <img src="exemplu afisare elemente vector.png" alt="se afiseaza elementele vectorului de la 0 la n-1">
+            <h1>Indexarea de la 0 si de la 1</h1>
+            <p>Orice tablou C++ are fizic elementele indexate de la 0 la Dimensiune-1. De exemplu, dacă avem nevoie de
+                un tablou cu n≤100 elemente întregi, îl vom declara:"int v[100]",iar elementele vor avea indici între 0
+                și 99. Astfel, primul element al tabloului este V[0], al doilea este V[1], …, ultimul este V[n-1].</p>
+            <p>Dacă dorim, putem ignora elementul V[0] (pur și simplu nu îl folosim, el există însă în continuare), și
+                atunci toate operațiile (citire, afișare, parcurgere) vor utiliza elementele V[1] (primul element), V[2]
+                (al doilea element), …, V[n] (ultimul element).</p>
+            <p>Trebuie de asemenea să tratăm cu atenție declararea tabloului, dimensiunea fizică trebuind să fie mai
+                mare cu 1 decât valoarea precizată în problemă. Dacă de exemplu, n≤100, declararea va fi:"int v[101];"
+            </p>
+            <h1>Initializarea elementelor dintr-un tablou</h1>
+            <img src="exemplu initializare elemente vector.png"
+                alt="se declara un vector cu 4 elemente:10,20,30,40.Dupa aceea,se declara alt vecor cu 10 elemente,iar primele 4 sunt 10,20,30,40.Inf inal, se mai declara un vector cu 10 elemente cu toate valorile 0.">
+            <ul>
+                <li>A va avea patru elemente, cu valorile A[0] = 10, A[1] = 20, A[2] = 30, A[3] = 40.</li>
+                <li>B va avea zece elemente; primele patru vor avea valorile B[0] = 10, B[1] = 20, B[2] = 30, B[3] = 40,
+                    celelalte vor avea valoarea 0!!!</li>
+                <li>C va avea zece elemente. Toate vor avea valoarea 0</li>
+            </ul>
+</body>
+
+</htmL>

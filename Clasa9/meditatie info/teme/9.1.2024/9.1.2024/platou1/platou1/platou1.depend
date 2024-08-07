@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1703841874 source:c:\users\pisoi rares\onedrive\documente\scoala\info liceu\pbinfo.github\clasa9\meditatie info\teme\9.1.2024\9.1.2024\platou1\platou1\main.cpp
+	<iostream>
+	<fstream>
+	<climits>
+

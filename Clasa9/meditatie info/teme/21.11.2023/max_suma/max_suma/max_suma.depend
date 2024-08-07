@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1700151457 source:c:\users\pisoi rares\onedrive\documente\scoala\info liceu\pbinfo.github\clasa9\meditatie info\teme\21.11.2023\max_suma\max_suma\main.cpp
+	<iostream>
+	<fstream>
+	<climits>
+
