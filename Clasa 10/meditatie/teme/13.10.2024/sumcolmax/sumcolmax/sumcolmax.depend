@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1728321824 source:c:\users\pisoi rares\onedrive\documente\scoala\info liceu\pbinfo.github\clasa 10\meditatie\teme\13.10.2024\sumcolmax\sumcolmax\main.cpp
+	<iostream>
+	<fstream>
+	<climits>
+

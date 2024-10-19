@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1728807670 source:c:\users\pisoi rares\onedrive\documente\scoala\info liceu\pbinfo.github\clasa 10\meditatie\teme\13.10.2024\electric\electric\main.cpp
+	<iostream>
+	<fstream>
+	<algorithm>
+

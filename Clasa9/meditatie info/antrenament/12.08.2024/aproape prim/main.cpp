@@ -1,33 +1,25 @@
 #include <iostream>
 
 using namespace std;
-int a_prim(int n) {
+int prim(int n){
+    int pr=1;
+    if(n<2){
+        pr=0;
+    }else{
+        for(int i=2;i*i<=n;i++){
+            if(n%i==0){
+                pr=0;
+                break;
+            }
+        }
+    }
+    return pr;
+}
+int a_prim(int x) {
     int aprim=0;
-    for(int d=1; d*d<=n; d++) {
-        if(n%d==0) {
-            int prim1=1;
-            int prim2=1;
-            if(d<2) {
-                prim1=0;
-            }else{
-                for(int f=1;f*f<=d;f++){
-                    if(d%f==0){
-                        prim1=0;
-                        break;
-                    }
-                }
-            }
-            if(n/d<2) {
-                prim2=0;
-            }else{
-                for(int f=1;f*f<=n/d;f++){
-                    if(n/d%f==0){
-                        prim2=0;
-                        break;
-                    }
-                }
-            }
-            if(prim1==1 && prim2==1){
+    for(int d=1; d*d<=x; d++) {
+        if(x%d==0) {
+            if(prim(d)==1 && prim(x/d)==1){
                 aprim=1;
                 break;
             }

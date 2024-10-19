@@ -2,13 +2,7 @@
 
 using namespace std;
 int multipli(int a,int b, int c){
-    int cnt=0;
-    for(int i=a;i<=b;i++){
-        if(i%c==0){
-            cnt++;
-        }
-    }
-    return cnt;
+    return c/b - c / (a-1);
 }
 int main()
 {

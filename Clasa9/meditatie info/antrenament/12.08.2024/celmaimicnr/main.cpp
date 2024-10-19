@@ -2,7 +2,7 @@
 
 using namespace std;
 int cmmnr(int n) {
-    int v[15];
+    int v[15],pozFolosita;
     int pz=0;
     while(n!=0) {
         int c=n%10;
@@ -24,9 +24,26 @@ int cmmnr(int n) {
 
     }while(srt==0);
     int nr=0;
-    for(int i=1;i<=pz;i++){
-        nr=nr*10+v[i];
+
+    if (v[1] != 0) {
+        for(int i=1;i<=pz;i++){
+            nr=nr*10+v[i];
+        }
+    } else {
+        for (int i=2;i<=pz;i++)
+            if (v[i] != 0) {
+                nr = v[i];
+                pozFolosita = i;
+                break;
+            }
+        for(int i=1;i<=pz;i++){
+            if (i!=pozFolosita)
+                nr=nr*10+v[i];
+        }
     }
+
+
+
     return nr;
 }
 int main() {
