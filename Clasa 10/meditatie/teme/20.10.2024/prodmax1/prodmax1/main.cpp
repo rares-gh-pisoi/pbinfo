@@ -26,8 +26,8 @@ int main()
             min2=x;
         }
     }
-    int p1=(1LL*max1)*(1LL*max2);
-    int p2=(1LL*min1)*(1LL*min2);
+    long long p1=(1LL*max1)*(1LL*max2);
+    long long p2=(1LL*min1)*(1LL*min2);
     if(p1>p2){
         cout<<p1;
     }else{

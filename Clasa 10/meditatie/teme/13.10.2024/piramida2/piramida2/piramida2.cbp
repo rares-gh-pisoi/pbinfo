@@ -33,6 +33,8 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="main.cpp" />
+		<Unit filename="romburi.in" />
+		<Unit filename="romburi.out" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

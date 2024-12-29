@@ -11,16 +11,15 @@ int main()
     }
     sort(v+1,v+n+1);
     int cnt=0;
-    int nrc;
-    for(int i=1;i<=n;i++){
-        if(v[i]<=b){
-            cnt++;
-            b-=v[i];
-        }else{
-            nrc=v[i]-b;
-            break;
-        }
+    for(int i=1;i<=n && v[i]<=b;i++){
+        cnt++;
+        b-=v[i];
     }
-    cout<<cnt<<" "<<nrc;
+    cout<<cnt<<" ";
+    if(cnt==n){
+        cout<<0;
+    }else{
+        cout<<v[cnt+1]-b;
+    }
     return 0;
 }

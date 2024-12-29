@@ -4,25 +4,42 @@
 using namespace std;
 ifstream fin("proiecte.in");
 ofstream fout("proiecte.out");
-int v[1001];
-int b[1001];
+
+struct Proiect {
+    int timp;
+    int indice;
+};
+
+Proiect v[1001];
+
+void sorteaDupaTimp(Proiect v[], int nrProiecte) {
+    bool esteSortat = false;
+    while (!esteSortat) {
+        esteSortat=true;
+        for(int i = 1; i<nrProiecte; i++) {
+            if(v[i].timp > v[i+1].timp) {
+                Proiect aux = v[i];
+                v[i] = v[i+1];
+                v[i + 1] = aux;
+
+                esteSortat = false;
+            }
+        }
+    }
+}
+
 int main()
 {
     int n;
     fin>>n;
     for(int i=1;i<=n;i++){
-        fin>>v[i];
-        b[i]=v[i];
+        fin>>v[i].timp;
+        v[i].indice = i;
     }
-    sort(b+1,b+n+1);
+
+    sorteaDupaTimp(v, n);
     for(int i=1;i<=n;i++){
-        int nrc=b[i];
-        for(int j=1;j<=n;j++){
-            if(v[j]==b[i]){
-                fout<<j<<" ";
-                break;
-            }
-        }
+        fout<<v[i].indice<<" ";
     }
     return 0;
 }

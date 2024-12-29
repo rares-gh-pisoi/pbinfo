@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1731224592 source:c:\users\pisoi rares\onedrive\documente\scoala\info liceu\pbinfo.github\clasa 10\meditatie\teme\3.11.2024\miny\miny\main.cpp
+	<iostream>
+	<fstream>
+	<climits>
+

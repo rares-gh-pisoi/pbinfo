@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1732876866 source:c:\users\pisoi rares\onedrive\documente\scoala\info liceu\pbinfo.github\clasa 10\meditatie\teme\1.12.2024\gustare\gustare\main.cpp
+	<iostream>
+	<fstream>
+	<algorithm>
+
