@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1739611388 source:c:\users\pisoi rares\onedrive\documente\scoala\info liceu\pbinfo.github\clasa 10\meditatie\teme\10.02.2024\gravitatie\gravitatie\main.cpp
+	<iostream>
+	<fstream>
+	<algorithm>
+

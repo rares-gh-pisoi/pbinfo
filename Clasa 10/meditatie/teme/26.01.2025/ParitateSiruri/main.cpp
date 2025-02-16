@@ -13,17 +13,13 @@ int main()
         char s[10000];
         fin >> s;
 
-        for(int k=1;k<strlen(s);k+=2){
-//          cout << "k= " << k;
-//        for(int k=1;k<strlen(s) ; k+=2) {
-
+        for(int k=1;s[k]!='\0';k+=2){
                 fout << s[k];
         }
 
         fout << ' ';
 
-        for(int k=0;k<strlen(s) ; k+=2) {
-
+        for(int k=0;s[k]!='\0'; k+=2) {
                 fout << s[k];
         }
         fout << '\n';

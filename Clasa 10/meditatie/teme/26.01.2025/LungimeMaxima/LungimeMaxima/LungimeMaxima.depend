@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1737393028 source:c:\users\pisoi rares\onedrive\documente\scoala\info liceu\pbinfo.github\clasa 10\meditatie\teme\26.01.2025\lungimemaxima\lungimemaxima\main.cpp
+	<iostream>
+	<fstream>
+	<cstring>
+

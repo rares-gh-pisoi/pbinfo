@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1737479157 source:c:\users\pisoi rares\onedrive\documente\scoala\info liceu\pbinfo.github\clasa 10\meditatie\teme\26.01.2025\cuvmax\cuvmax\main.cpp
+	<iostream>
+	<fstream>
+	<cstring>
+

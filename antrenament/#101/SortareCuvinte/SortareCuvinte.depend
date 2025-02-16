@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1738179464 source:c:\users\pisoi rares\onedrive\documente\scoala\info liceu\pbinfo.github\antrenament\#101\sortarecuvinte\main.cpp
+	<iostream>
+	<cstring>
+	<fstream>
+	<algorithm>
+
